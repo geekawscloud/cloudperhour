@@ -21,8 +21,16 @@ $result = $client->deleteBucket(array(
     'Bucket' => $bucket
 ));
 
+//code to tell user the file has been deleted.
+echo "<h2 align=\"center\">Object $key successfully deleted.</h2>";
+
+//Code to delete our bucket
+$result = $client->deleteBucket(array(
+    'Bucket' => $bucket
+));
+
 //code to create our webpage.
 echo "<h2 align=\"center\">Bucket $bucket successfully deleted.</h2>";
-echo "<div align = \"center\"><img src=\"https://s3.amazonaws.com/cloudperhour/cloudperhour.jpg\"></img></div>";
+echo "<div align = \"center\"><img src=''https://s3.amazonaws.com/cloudperhour/cloudperhour.jpg'/></d$
 echo "<h2 align=\"center\">Good Bye Cloud Experts!</h2>";
 ?>
